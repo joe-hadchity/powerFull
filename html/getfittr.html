@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+<link rel="stylesheet" href="../css/page.css">
+
+</style>
+<script>
+  fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('footerContent').innerHTML = data;
+      })
+      .catch(error => console.error('Error fetching footer:', error));
+
+fetch('navbar.html')
+.then(response => response.text())
+.then(data => {
+  document.getElementById('navbar-container').innerHTML = data;
+})
+.catch(error => console.error('Error fetching navbar:', error));
+</script>
+    </head>
+<body>
+    
+    
+    <div id="navbar-container"></div>
+      
+    <h1>Men’s Health Week 2019 - Maximuscle Workout</h1>
+   <p> <img src="../assets/okay.jpg" alt="4-week-buling-diet"></p>
+    <p>June 10th marks the start of Men’s Health Week 2019, a week designed to encourage more men to become active and take an interest in their health. </p>
+    <p>One man in five dies before he is old enough to retire, Men’s Health Week aims to change that statistic.</p>
+    <h3>Men’s Health Week this year focuses on numbers:</h3>
+    
+    <ul>
+        <li>37 - a waist size of 37 inches or above puts you at increased of heart disease, diabetes and cancer. </li>
+        <li>150 - men should aim for 150 minutes of moderate physical activity a week. </li>
+        <li>5 - we should aim to eat 5 portions of fruit and veg a day. </li>
+        <li>14 - maximum 14 units of alcohol a week. </li>
+        <li>10 - cigarette smokers die 10 years younger on average than non-smokers. </li>
+        <li>120/80 - normal blood pressure. </li>
+        <li>75% of suicides (3 out of 4) are by men. </li>
+        
+    </ul>
+    <p>Maximuscle have always been a brand that wants to help people achieve their fitness goals and live a healthier life. If you are using this week as a way to get back in the gym and achieve your goals, then why not try this five-day workout plan:</p>
+    <h3>DAY 1</h3>
+    
+    <ul>
+        <li>Warm-up: Row – 5 minutes </li>
+        <li>Push Press – 8 x 4 </li>
+        <li>Bench Press – 8 x 4 </li>
+        <li>Overhead Press – 8 x 4 </li>
+        <li>Incline Dumbbell Press – 8 x 4 </li>
+        <li>Press-ups – Failure x 4</li>
+        
+    </ul>
+    <h3>DAY 2</h3>
+    
+    <ul>
+        <li>Warm-up: Row – 5 minutes </li>
+        <li>Plyometric Box Jumps – 8 x 4</li>
+        <li>Squats – 8 x 4 </li>
+        <li>Glute Bridge on Bench – 8 x 4 </li>
+        <li>Deadlift – 8 x 4 </li>
+        <li>Overhead Press – 8 x 4 </li>
+        <li>Single Leg Press – Failure x 3 per leg</li>
+        
+    </ul>
+    <h3>DAY 3</h3>
+    
+    <ul>
+        <li>Warm-up: Row – 5 minutes </li>
+        <li>Power Cleans – 4 to 8 x 4 </li>
+        <li>Pull-ups – 4 to 8 x 4 </li>
+        <li>Seated Row – 8 x 4 </li>
+        <li>Upright Row – 8 x 4 </li>
+        <li>Medicine Ball Slams – 30 seconds x 4</li>
+    </ul>
+    <h3>DAY 4</h3>
+    
+    <ul>
+        <li>Warm-up: Row – 5 minutes </li>
+        <li>Sled Drags – 25m x 4 </li>
+        <li>Front Squats – 8 x 4 </li>
+        <li>Split Squats – 8 x 4 </li>
+        <li>Romanian Deadlift – 8 x 4 </li>
+        <li>Farmers Walk – 25-30 metres x 4</li>
+    </ul>
+    <h3>DAY 5</h3>
+    
+    <ul>
+        <li>Warm-up: Row – 5 minutes </li>
+        <li>HIIT Training – Running Machine – 30 second sprint, 30 second rest x 10</li>
+        
+    </ul>
+    
+
+
+<h3>Check our <a href="getleandietplan.html">DIET PLAN</a></h3>
+<div id="footerContent"></div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Training zone</title>
+       <!-- / <link rel="shortcut icon" type="image/icon" href="JF.png"> -->
+        <meta charset="utf-8">
+     <link rel="stylesheet" href="../css/trainingZone.css">
+    </head>
+    <script>
+      fetch('footer.html')
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById('footerContent').innerHTML = data;
+          })
+          .catch(error => console.error('Error fetching footer:', error));
+ 
+  fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar-container').innerHTML = data;
+    })
+    .catch(error => console.error('Error fetching navbar:', error));
+  </script>
+    
+    <body>
+      <div id="navbar-container"></div>
+        <p><br>
+           
+           <div class="row">
+               <div class="column">
+                   <div class="card">
+                      <a href="gainstr.html"><img src="../assets/gain strength copy.png" width="250" height="400"
+                        alt="gainstrength" margin="2000" ></a>
+                 </div>
+                </div>
+                
+                <div class="column">
+                    <div class="card"><a href="getfit.html"> <img src="../assets/Get fit copy.png" width="250" height="400"
+                alt="get fit" id="gain_str"></a></div></div>
+                
+                <div class="column">
+                   <div class="card">
+                       <a href="losefat.html"><img src="../assets/lose weight copy.png" width="250" height="400"
+                        alt="loseweight"></a>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <div class="card"><a href="buildmus.html" ><img src="../assets/build muscle copy.png" width="250" height="400"
+                alt="builfmuscle"></a></div></div>
+             </div>
+            
+           
+        </p>
+        <div id="footerContent"></div>
+</body>
+</html>

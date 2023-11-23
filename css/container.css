@@ -1,0 +1,74 @@
+/* Clearfix to contain floated elements */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Column layout for the image cards */
+.column {
+  float: left;
+  width: 50%; /* Each container takes half of the page */
+  padding: 0 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Improved card design */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px; /* Round corners */
+  overflow: hidden; /* Ensure rounded corners are applied */
+  transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+  width: 250px; /* Set a fixed width */
+  height: 300px;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Centering the container */
+.container {
+  padding: 0 8px; /* Smaller padding */
+  margin: 0 auto; /* Center container */
+  width: 90%; /* Reduce width */
+  max-width: 1200px; /* Set a maximum width */
+}
+
+/* Style for buttons */
+.button {
+  border: none;
+  outline: 0;
+  display: block;
+  padding: 12px 20px; /* Adjusted button padding */
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-family: "Aldo the Apache";
+  font-weight: lighter;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #555;
+}
+/* Header font */
+h2 {
+  font-family: "Aldo the Apache", sans-serif;
+  font-size: 35px;
+  font-weight: lighter;
+}
+
+/* Body font */
+p {
+  font-family: "Roboto", sans-serif;
+}

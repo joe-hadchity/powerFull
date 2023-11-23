@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Power-Full</title>
+    <link rel="stylesheet" href="../css/homepage.css"/>
+    <script>
+   
+   
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footerContent').innerHTML = data;
+            })
+            .catch(error => console.error('Error fetching footer:', error));
+   
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      })
+      .catch(error => console.error('Error fetching navbar:', error));
+    </script>
+  </head>
+  <body>
+    <div id="navbar-container"></div>
+    <div class="container">
+      <div class="row">
+        <div class="column-33">
+          <img src="../assets/POWER-FULL copy11.png" width="300" height="300" />
+        </div>
+        <h1 class="xlarge-font"><b>POWER UP</b></h1>
+        <h1 class="large-font" style="color: #f97a43">
+          <b>WORLD'S STRONGEST FITNESS WEB</b>
+        </h1>
+        <p>
+          <span style="font-size: 36px; font-family: 'Aldo the Apache';" >WORK HARD.</span> Whether you are an
+          elite sportsperson, a gym purist or a complete beginner, Maxinutrition
+          can help you achieve things you never thought possible. As the premier
+          sports nutrition brand in the UK, we have been supporting British
+          athletes, fitness and healthy lifestyles for over two decades. Since
+          1995, we've helped millions of people push harder, go faster and
+          further. Break limits and personal bests. Build confidence and realise
+          dreams. Simply, we help you achieve your fitness goals.
+        </p>
+        <div class="column-66">
+          <h1 class="xlarge-font">&nbsp;</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="background-color:#262626">
+      <div class="row">
+        <div class="center">
+          <h1 class="xlarge-font" style="color: #f97a43">
+            <b>trust the process</b>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="column-66">
+          <h1 class="xlarge-font"><b>READ UP</b></h1>
+          <h1 class="large-font" style="color: #f97a43">
+            <b>STRENGHT MATTERS</b>
+          </h1>
+          <p>
+            <span style="font-size: 36px; font-family: 'Aldo the Apache';">CUSTOMERS COME FIRST</span> 
+            Our
+            single-minded focus is helping you achieve your goals. If your
+            motivation is flagging, we've got your back. We're obsessed with
+            creating the best fitness site out there because we love hearing
+            about your success once you’ve implemented our fitness solutions.
+          </p>
+        </div>
+        <div class="column-33">
+     
+        </div>
+      </div>
+    </div>
+    <div id="footerContent"></div>
+
+  </body>
+</html>

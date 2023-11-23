@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center; 
+    /* align-items: center; */
+    flex-wrap: wrap;
+    gap: 30px; /* Adjust the gap between cards */
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    width: calc(30% - 20px); /* Adjusted width */
+    background-color: #fff;
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures the corners are rounded */
+  }
+  
+  .card:hover {
+    transform: scale(1.03); /* Slightly smaller scale on hover */
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px; /* Adjusted border radius for images */
+    border-top-right-radius: 10px; /* Adjusted border radius for images */
+  }
+  
+  .price {
+    color: #777; /* Softer grey for price */
+  }
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 12px 24px; /* Slightly increased padding for a more prominent button */
+    background-color: #000;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for both color and background on hover */
+    border-radius: 5px; /* Adding a slight border radius */
+    font-size: 16px; /* Adjusting font size */
+    font-weight: bold; /* Emphasizing the font weight */
+    text-transform: uppercase; /* Uppercase text */
+  }
+  
+  button:hover {
+    background-color: #333; /* Darker background on hover */
+    color: #fff; /* Lighter text color on hover for contrast */
+  }
+  
+  
+  p,
+  h2 {
+    text-align: center;
+    margin-top: 10px; /* Adjusted top margin */
+    margin-bottom: 10px; /* Added bottom margin */
+    width: 100%; /* Ensures text is centered within the card */
+  }
+  

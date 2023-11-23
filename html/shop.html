@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../css/shop.css">
+  <script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footerContent').innerHTML = data;
+        })
+        .catch(error => console.error('Error fetching footer:', error));
+  
+  fetch('navbar.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('navbar-container').innerHTML = data;
+  })
+  .catch(error => console.error('Error fetching navbar:', error));
+  </script>
+</head>
+<div id="navbar-container"></div>
+<body>
+  <h2 style="text-align:center"></h2>
+
+  <div class="card">
+    <img src="../assets/b1.jpg" style="width:100%">
+    <h2>Whey&Creatine</h2>
+    <p class="price">100$</p>
+    <p><a href="shop2.html"><button>Add to Cart</button></a></p>
+  </div>
+
+  <div class="card">
+    <img src="../assets/b2.jpg" style="width:100%">
+    <h2>Whey&Preworkout</h2>
+    <p class="price">100$</p>
+    <p><a href="shop2.html"><button>Add to Cart</button></a></p>
+  </div>
+  
+  <div class="card">
+    <img src="../assets/b3.jpg" style="width:100%">
+    <h2>Power-full package</h2>
+    <p class="price">200$</p>
+    <p><a href="shop2.html"><button>Add to Cart</button></a></p>
+  </div>
+
+  <div class="card">
+    <img src="../assets/b4.jpg" style="width:100%">
+    <h2>Pre-Package</h2>
+    <p class="price">75$</p>
+    <p><a href="shop2.html"><button>Add to Cart</button></a></p>
+  </div>
+
+  <div class="card">
+    <img src="../assets/b5.jpg" style="width:100%">
+    <h2>Double Pre</h2>
+    <p class="price">75$</p>
+    <p><a href="shop2.html"><button>Add to Cart</button></a></p>
+  </div>
+
+  <div class="card">
+    <img src="../assets/b8.jpg" style="width:100%">
+    <h2>Sleep&max</h2>
+    <p class="price">50$</p>
+    <p><a href="shop2.html"><button>Add to Cart</button></a></p>
+  </div>
+  
+  <footer>
+    <div id="footerContent"></div>
+  </footer>
+</body>
+</html>
+

@@ -1,0 +1,24 @@
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background:#262626;
+  margin-top: 20px;
+}
+
+ .footer p {
+  text-align: left;
+  font-size: small;
+  color:rgb(155, 155, 155);
+}
+
+ .footer h3 {
+  color: whitesmoke;
+  font-family: 'Aldo the Apache'
+}
+
+ .footer a {
+  display: inline-block;
+  margin: 0 10px; 
+  vertical-align: middle;
+}

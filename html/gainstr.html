@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="../css/container.css">
+
+</style>
+<script>
+fetch('footer.html')
+  .then(response => response.text())
+  .then(data => {
+      document.getElementById('footerContent').innerHTML = data;
+  })
+  .catch(error => console.error('Error fetching footer:', error));
+
+fetch('navbar.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('navbar-container').innerHTML = data;
+})
+.catch(error => console.error('Error fetching navbar:', error));
+</script>
+</head>
+    <body>
+      <div id="navbar-container"></div>
+          </div>
+                <br><br><br>
+              <div class="row">
+                  <div class="column">
+                    <div class="card">
+                      <img src="../assets/seafood-linguine.jpg" alt="BULK" style="width:100%">
+                      <div class="container">
+                        <h2> DIET PLAN</h2>
+                        <p>f you’re new to body building but aren’t sure how to tailor your diet to support your increased training - never fear, Maximuscle is here! We’ve pulled together 5 starter must do’s for all new</p>
+                        <p><a href="STRDIETPLAN.HTML">
+                            <label>
+                           <button class="button">Read Article</button>
+                            </label></a></p>
+                      </div>
+                    </div>
+                  </div>
+                
+                  
+                  
+                  <div class="column">
+                    <div class="card">
+                      <img src="../assets/STRTRPLAN.JPEG" alt="BULK" style="width:100%">
+                      <div class="container">
+                        <h2> TRAINING PLAN</h2>
+                        <p>Take a look at this five day strength and power training plan to help you lift heavier and faster. Reach your strength goal with Maximuscle.</p>
+                        <p><a href="STRTRPLAN.html"><button class="button">Read Article</button></a></p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  </div>  
+                  <div id="footerContent"></div> 
+    </body>
+</html>

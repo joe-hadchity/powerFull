@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+<link rel="stylesheet" href="../css/page.css">
+
+</style>
+<script>
+  fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('footerContent').innerHTML = data;
+      })
+      .catch(error => console.error('Error fetching footer:', error));
+
+fetch('navbar.html')
+.then(response => response.text())
+.then(data => {
+  document.getElementById('navbar-container').innerHTML = data;
+})
+.catch(error => console.error('Error fetching navbar:', error));
+</script>
+    </head>
+    
+<body>
+    
+    <div id="navbar-container"></div>
+    <h1>4 WEEK BULKING TRNASFORMATION DIET</h1>
+   <p> <img src="../assets/bulkingfood.jpg" alt="4-week-buling-diet"></p>
+    <h2>KEY POINTS ON BULKING</h2>
+    <ol>
+        <li>The bulk phase – the big feed. Bulk it out then lean up with a cut. </li>
+        <li>To smash the bulk phase, you need to train like you mean it and feed like you need it. </li>
+        <li>Bulking isn’t about eating as much, of whatever you want. It’s about feeding the muscle growth. Check out our top nutrition tips to support your bulking diet. </li>
+        
+    </ol>
+    <p>Packing on lean muscle is tough for even the most seasoned athlete. Not only does your training have to be strict and well-structured around hypertrophy, your diet also needs to support your body as it grows. </p>
+    <p>To help themselves grow, most bodybuilders will perform a bulking and cutting cycle. The bulking stage focuses on packing on as much mass as possible. Time frames vary, but the plan below is for a four-week bulk – perfect for adding extra mass before a holiday.</p>
+    <p>However, to pack on size you need to be eating healthy food, and a lot of it. To help, use an online calorie calculator to work out what your calorie ‘maintenance’ is – which is the calorie intake you need to eat each day to maintain your weight. This will vary based on your height, weight, age and activity status. Typically, the guidelines state 2500 calories for men and 2000 calories for women. But in addition, you’ll need to add extra calories to ensure that you are feeding the growth. You should start with a surplus of +20%, (approximately 500 calories). </p>
+    <p>When you’re eating a surplus, your body will be able to use the extra energy (carbohydrate, protein and fat) to train harder and build muscle. An increase in calories goes hand-in-hand with an increase in muscle mass – but only if you eat the right food, i.e. packing in the protein.</p>
+
+<p><img src="../assets/meal prep.jpg" alt="mealprep" width="863"><br>We’ve put together some nutritional information and some examples of foods to eat on your 4-week bulking diet, to help aid your bulking transformation and build a bigger body: </p>
+<h3>Hydration</h3>
+<p>When you’re bulking, you’ll need to keep yourself well hydrated. 1.5 – 2 litres per day or 6-8 glasses of water. To increase your caloric intake, you could also drink milk for additional protein – a perfect evening drink before bed to keep that protein synthesis in the black. You could consider a product such as Micellar Casein, for a tasty slow releasing protein powder. Fruit juices can add extra sugar which can be useful post-workout, but limit this to once or twice per week. 
+</p>
+<h3>Carbohydrate</h3>
+<p>Unlike a cut, where you need to cut down on carbohydrates, those on a bulk can and should enjoy plenty of carbs. Hence, the harder you can train, the more likely you are to build mass. Stick to wholegrains as opposed to processed refined carbs which quickly spike blood sugar and can be stored as fat. </p>
+<h3>Protein</h3>
+<p>Protein is the key nutrient when it comes to bulking transformations, as it’s the nutrient responsible for supporting lean muscle development. On a bulk, every meal should contain protein and you should aim for 2g per kg of bodyweight per day. </p>
+
+<h2>THE 4 WEEK BULKING DIET</h2>
+<p>Your bulking transformation depends on two things: eating at a calculated calorie surplus and eating healthy food. A ‘dirty bulk’ will add too much body fat and leave you feeling bloated. </p>
+<p>Instead, aim to consume around 6 meals a day that pack in plenty of calories. We’ve provided plenty of options for each meal below, so mix and match to build yourself a diet that’ll help you quickly gain lean mass. </p>
+<p>Add veggies such as tomatoes, celery and broccoli, to whichever meal you like. </p>
+<p>Breakfast options – select one from the following list each day. </p>
+<ul>
+    <li>6 egg omelette with spinach (approx. 564 kcal) </li>
+    <li>Large portion of granola, whole milk and sliced banana (approx. 750 kcal) </li>
+    <li>1 or 2 bagels with peanut butter (approx. 380/760 kcal) </li>
+    <li>2 Poached eggs, salmon and avocado (approx. 550 kcal) </li>
+</ul>
+<p>Morning meal/snack options – combine these to increase calories if needed </p>
+<ul>
+    <li>Progain flapjack (approx. 324 kcal)  </li>
+    <li> Progain extreme shake (600 kcal) </li>
+    <li>Handful of almonds (approx. 92 kcal per serving)  </li>
+    <li>Apple with peanut butter (approx. 200 kcal)</li>
+    <li>Small portion of chicken breast, tomatoes, celery and brown rice (approx. 450 kcal) </li>
+</ul>
+<ul>
+    <li>Double chicken breast, broccoli and rice (approx. 700 kcal) 
+    </li>
+    <li>Salmon, sweet potatoes and sesame seeds (approx. 700 kcal) </li>
+    <li>Chicken breast, salsa, brown rice and peppers (approx. 720 kcal)</li>
+    <li>Vegetarian bean chili burritos (approx. 900 kcal)</li>
+    <li>Tinned tuna, quinoa, avocado and broccoli (approx. 500 kcal)</li>
+    </ul>
+    <p>Dinner options</p>
+    <ul>
+    <li>Tuna steak with olive oil, two sweet potatoes and quinoa (approx. 800 kcal) </li>
+    <li>Sirloin steak, white rice and fried egg (approx. 950 kcal) </li>
+    <li>Burger with lean beef, fries, white bread roll, cup of green beans (approx. 1450 kcal) </li>
+    <li>Tuna, pasta and Bolognese sauce (approx. 600 kcal) </li>
+
+</ul>
+<h3>Check our <a href="trainingplanbulk.html">TRAINING PLAN</a></h3>
+<h3>Check our <a href="bmi-calc.html">BMI CALCULATOR</a></h3>
+<div id="footerContent"></div>
+</body>
+</html>

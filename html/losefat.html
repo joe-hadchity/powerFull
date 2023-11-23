@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="../css/container.css">
+
+</style>
+<script>
+fetch('footer.html')
+  .then(response => response.text())
+  .then(data => {
+      document.getElementById('footerContent').innerHTML = data;
+  })
+  .catch(error => console.error('Error fetching footer:', error));
+
+fetch('navbar.html')
+.then(response => response.text())
+.then(data => {
+document.getElementById('navbar-container').innerHTML = data;
+})
+.catch(error => console.error('Error fetching navbar:', error));
+</script>
+</head>
+    <body>
+      <div id="navbar-container"></div>
+                <br><br><br>
+              <div class="row">
+                  <div class="column">
+                    <div class="card">
+                      <img src="../assets/lean-def-meal-plan.jpg" alt="BULK" style="width:100%">
+                      <div class="container">
+                        <h2> DIET PLAN</h2>
+                        <p>The Maxinutrition Lean Definition meal Plan is designed for those looking for a more defined physique. protein supports muscle maintenance which is key when on a calorie restricted diet.</p>
+                        <p><a href="getleandietplan.html">
+                            <label>
+                           <button class="button">Read Article</button>
+                            </label></a></p>
+                      </div>
+                    </div>
+                  </div>
+                
+                  
+                  
+                  <div class="column">
+                    <div class="card">
+                      <img src="../assets/maxinutrition_raw_bodyweight.jpg" alt="BULK" style="width:100%">
+                      <div class="container">
+                        <h2> TRAINING PLAN</h2>
+                        <p>Learn how to get lean with our lean definition training plan, a five day workout program designed to shred fat and create a ripped physique.<br><br></p>
+                        <p><a href="losefattraining.html"><button class="button">Read Article</button></a></p>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div id="footerContent"></div>  
+    </body>
+</html>

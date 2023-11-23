@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+<link rel="stylesheet" href="../css/container.css">
+
+</style>
+<script>
+  fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('footerContent').innerHTML = data;
+      })
+      .catch(error => console.error('Error fetching footer:', error));
+
+fetch('navbar.html')
+.then(response => response.text())
+.then(data => {
+  document.getElementById('navbar-container').innerHTML = data;
+})
+.catch(error => console.error('Error fetching navbar:', error));
+</script>
+    </head>
+    <body>
+      
+        <div id="navbar-container"></div>
+            <br><br><br>
+          <div class="row">
+              <div class="column">
+                <div class="card">
+                  <img src="../assets/4-Week-Bulking-Diet (1).png" alt="BULK" style="width:100%">
+                  <div class="container">
+                    <h2> DIET PLAN</h2>
+                    <p>Want to pack on size but don’t know what to eat? Click here to read Maximuscle’s guidelines and diet plan to help maximize your bulking transformation.</p>
+                    <p><a href="4week diet plan.html">
+                        <label>
+                       <button class="button">Read Article</button>
+                        </label></a></p>
+                  </div>
+                </div>
+              </div>
+            
+              
+              
+              <div class="column">
+                <div class="card">
+                  <img src="../assets/bulking-training-plan.jpg" alt="BULK" style="width:100%">
+                  <div class="container">
+                    <h2> TRAINING PLAN</h2>
+                    <p>Want big rippling muscles for the beach this summer? Try out our 7 day bulk training plan to kick your training up a level</p>
+                    <p><a href="trainingplanbulk.html"><button class="button">Read Article</button></a></p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+  
+            <div id="footerContent"></div>          
+    </body>
+</html>
