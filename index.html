@@ -7,7 +7,7 @@
     <script>
    
    
-        fetch('footer.html')
+        fetch('./html/footer.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('footerContent').innerHTML = data;
